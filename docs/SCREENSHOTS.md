@@ -18,6 +18,13 @@ python docs/images/scripts/make_clearance.py
 
 Or: `bash scripts/generate_readme_figures.sh`
 
+Regenerate the README demo GIF (slideshow from screenshots):
+
+```bash
+pip install pillow
+python docs/images/scripts/make_demo_gif.py
+```
+
 ## Manual captures (save under `docs/images/`)
 
 | File | What to capture |

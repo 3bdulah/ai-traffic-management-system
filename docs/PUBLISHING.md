@@ -2,13 +2,16 @@
 
 Public repo: **https://github.com/3bdulah/ai-traffic-management-system**
 
-## Optional polish
+## One manual step (GitHub UI)
 
-- [ ] Upload social preview: GitHub → **Settings → General → Social preview** (`docs/images/hero-banner.png` or `dashboard.png`)
-- [ ] Add repo topics: `computer-vision`, `traffic-simulation`, `yolo`, `sumo`, `fastapi`, `nextjs`, `capstone`
-- [ ] Optional: record a 15s demo GIF → `docs/images/demo.gif`
+Upload **Settings → General → Social preview** using `docs/images/dashboard.png` or `hero-banner.png` (API upload is not available for personal repos via CLI).
 
-## LinkedIn post (template)
+- Public visibility, description, and topics
+- CI badge (tests + frontend build)
+- README with demo GIF, screenshots, and capstone report
+- `CONTRIBUTORS.md`, `docs/DEMO.md`, MIT license
+
+## Optional LinkedIn post
 
 > Built **TRaffic** — an AI traffic management platform for our year-long capstone at Bahçeşehir University.
 >
@@ -20,4 +23,8 @@ Public repo: **https://github.com/3bdulah/ai-traffic-management-system**
 >
 > Repo: https://github.com/3bdulah/ai-traffic-management-system
 
-Attach: `dashboard.png` or `demo.gif` + one results chart.
+Attach: `docs/images/demo.gif` or `docs/images/dashboard.png`.
+
+## Replace demo GIF with a screen recording (optional)
+
+The current `demo.gif` is a slideshow built from screenshots. For a live-feel clip, record ~15s of the running app and overwrite `docs/images/demo.gif`.

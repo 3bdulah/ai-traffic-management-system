@@ -15,6 +15,8 @@
 
 **Traffic lights that see the road and adapt to it in real time.** Instead of running on a fixed timer, this system uses AI-powered cameras to count vehicles as they arrive and adjusts signal timing on the fly — tested in a virtual city across three traffic patterns and proven to cut waiting times by up to **54 %**.
 
+<img src="docs/images/demo.gif" alt="TRaffic platform demo — dashboard, CARLA vision, Simulation Lab, real-world detections" width="92%" />
+
 </div>
 
 ---
@@ -344,6 +346,8 @@ The same YOLOv11m + ByteTrack analytics pipeline runs identically whether the in
 
 The system was validated at three levels — unit tests on each controller and detector primitive, integration tests on the full SimulationManager + CV pipeline, and operator-workflow system tests through the dashboard.
 
+> **CI:** GitHub Actions runs automated unit tests for the ALINEA and composite policy controllers on every push. Tests T-01–T-05 and T-08–T-10 are experimental / integration validations documented in [`docs/CAPSTONE_REPORT.md`](docs/CAPSTONE_REPORT.md); T-06–T-07 are reproduced via `scripts/run_races.py`.
+
 <details>
 <summary><b>10 test cases — all passed</b></summary>
 
@@ -426,7 +430,7 @@ Initial 6-race batches crashed on the second run due to orphaned TraCI socket ha
 ## Project structure
 
 ```
-TRaffic/
+ai-traffic-management-system/
 ├── backend/                 FastAPI app — routers, services, WebSocket manager
 ├── frontend/                Next.js dashboard — components, hooks, Zustand store
 ├── packages/
@@ -437,7 +441,7 @@ TRaffic/
 │   └── sumo-engine/         TraCI client, snapshot extraction, three network configs
 ├── scripts/                 Network + demand generation, race-mode runners
 ├── supabase/                Database migrations
-└── docs/                    Architecture notes, API spec, README assets
+└── docs/                    Capstone report, demo guide, README assets
 ```
 
 ---
@@ -588,7 +592,7 @@ Open **http://localhost:3000**, pick a network and a policy, and click **Start**
 
 ## Reference
 
-The complete capstone report — including methodology, full results, analysis, and acknowledgements — lives in [`docs/CAPSTONE_REPORT.md`](docs/CAPSTONE_REPORT.md). Regenerate schematic and chart figures with `bash scripts/generate_readme_figures.sh`; app screenshots are listed in [`docs/SCREENSHOTS.md`](docs/SCREENSHOTS.md).
+The complete capstone report — including methodology, full results, analysis, and acknowledgements — lives in [`docs/CAPSTONE_REPORT.md`](docs/CAPSTONE_REPORT.md). Team credits are in [`CONTRIBUTORS.md`](CONTRIBUTORS.md). First-time setup without cloud keys: [`docs/DEMO.md`](docs/DEMO.md). Regenerate schematic and chart figures with `bash scripts/generate_readme_figures.sh`; the demo GIF with `python docs/images/scripts/make_demo_gif.py`.
 
 ---
 
