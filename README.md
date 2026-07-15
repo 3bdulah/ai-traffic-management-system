@@ -11,7 +11,7 @@
 [![CARLA](https://img.shields.io/badge/CARLA-0.9.16-E67E22)](https://carla.org)
 [![YOLOv11](https://img.shields.io/badge/YOLOv11m-mAP_0.949-8E44AD)](https://github.com/ultralytics/ultralytics)
 [![Capstone](https://img.shields.io/badge/Capstone-Bah%C3%A7e%C5%9Fehir_University-5E35B1)](https://bau.edu.tr)
-[![CI](https://github.com/m7md-aiman/TRaffic/actions/workflows/ci.yml/badge.svg)](https://github.com/m7md-aiman/TRaffic/actions/workflows/ci.yml)
+[![CI](https://github.com/3bdulah/ai-traffic-management-system/actions/workflows/ci.yml/badge.svg)](https://github.com/3bdulah/ai-traffic-management-system/actions/workflows/ci.yml)
 
 **Traffic lights that see the road and adapt to it in real time.** Instead of running on a fixed timer, this system uses AI-powered cameras to count vehicles as they arrive and adjusts signal timing on the fly — tested in a virtual city across three traffic patterns and proven to cut waiting times by up to **54 %**.
 
@@ -544,8 +544,8 @@ A complete integrated stack — microsimulation, custom perception, adaptive con
 ### Install
 
 ```bash
-git clone https://github.com/m7md-aiman/TRaffic.git
-cd TRaffic
+git clone https://github.com/3bdulah/ai-traffic-management-system.git
+cd ai-traffic-management-system
 
 # Backend
 python -m venv .venv

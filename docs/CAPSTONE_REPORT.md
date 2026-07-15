@@ -712,7 +712,7 @@ References
 APPENDIX A: Source Code and Repository
 A.1 Repository Links
 The complete source code for both subsystems is maintained in two GitHub repositories. All source code, configuration files, scenario definitions, training scripts, evaluation pipelines, and supporting documentation are available at the following locations:
-Simulation and Control Repository URL: https://github.com/m7md-aiman/TRaffic — SUMO microsimulation environment, TraCI subscription client, actuated and fixed-time signal control policies, FastAPI backend, WebSocket broadcasting layer, Next.js dashboard, CARLA visualization bridge, emergency vehicle preemption module, Supabase logging pipeline, race-mode experiment framework, and network generation scripts.
+Simulation and Control Repository URL: https://github.com/3bdulah/ai-traffic-management-system — SUMO microsimulation environment, TraCI subscription client, actuated and fixed-time signal control policies, FastAPI backend, WebSocket broadcasting layer, Next.js dashboard, CARLA visualization bridge, emergency vehicle preemption module, Supabase logging pipeline, race-mode experiment framework, and network generation scripts.
 backend/          FastAPI application — routers, services, WebSocket manager
 frontend/         Next.js dashboard — components, hooks, Zustand store
 packages/
