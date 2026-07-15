@@ -2,14 +2,16 @@
 
 Public repo: **https://github.com/3bdulah/ai-traffic-management-system**
 
-## One manual step (GitHub UI)
-
-Upload **Settings → General → Social preview** using `docs/images/dashboard.png` or `hero-banner.png` (API upload is not available for personal repos via CLI).
+## Done on the repo
 
 - Public visibility, description, and topics
 - CI badge (tests + frontend build)
 - README with demo GIF, screenshots, and capstone report
 - `CONTRIBUTORS.md`, `docs/DEMO.md`, MIT license
+
+## One manual step (GitHub UI)
+
+Upload **Settings → General → Social preview** using `docs/images/dashboard.png` or `hero-banner.png` (not available via CLI).
 
 ## Optional LinkedIn post
 
