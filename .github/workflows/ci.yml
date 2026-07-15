@@ -15,16 +15,21 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+          cache: pip
 
-      - name: Install packages
+      - name: Install Python packages
         run: |
           python -m pip install --upgrade pip
           pip install pytest pytest-asyncio
           pip install -e packages/shared
           pip install -e packages/adaptive-policy
+          pip install -e packages/sumo-engine
+          pip install -e packages/carla-bridge
+          pip install -e packages/cv-pipeline
+          pip install -e backend
 
       - name: Run tests
-        run: pytest packages/adaptive-policy/tests -q
+        run: pytest packages/adaptive-policy/tests backend/smoke_tests -q
 
   frontend:
     runs-on: ubuntu-latest
@@ -43,4 +48,5 @@ jobs:
       - name: Install and build
         run: |
           npm ci
+          npm run lint
           npm run build

@@ -1,32 +1,26 @@
-# Publishing to GitHub & LinkedIn
+# Publishing checklist
 
 Public repo: **https://github.com/3bdulah/ai-traffic-management-system**
 
-## Done on the repo
+## Completed
 
-- Public visibility, description, and topics
-- CI badge (tests + frontend build)
-- README with demo GIF, screenshots, and capstone report
-- `CONTRIBUTORS.md`, `docs/DEMO.md`, MIT license
+- Public release **v1.0.0** with changelog
+- CI: Python tests (12) + frontend build + ESLint
+- Docs: architecture, demo guide, capstone report, contributors, security policy
+- GitHub topics, issue templates, Dependabot, citation file
 
-## One manual step (GitHub UI)
+## One manual step
 
-Upload **Settings → General → Social preview** using `docs/images/dashboard.png` or `hero-banner.png` (not available via CLI).
+Upload **Settings → General → Social preview** using `docs/images/dashboard.png` or `hero-banner.png`.
 
-## Optional LinkedIn post
+## LinkedIn post
 
-> Built **TRaffic** — an AI traffic management platform for our year-long capstone at Bahçeşehir University.
+> Built an AI traffic management platform for our year-long capstone at Bahçeşehir University.
 >
 > - **54%** shorter average wait times (adaptive vs fixed-time signals)
 > - Custom **YOLOv11m** (mAP 0.949) + SUMO microsimulation + real-time Next.js dashboard
 > - Emergency preemption, ramp metering, CARLA vision bridge
 >
-> Stack: Python · FastAPI · Next.js · SUMO · CARLA · Supabase
->
 > Repo: https://github.com/3bdulah/ai-traffic-management-system
 
-Attach: `docs/images/demo.gif` or `docs/images/dashboard.png`.
-
-## Replace demo GIF with a screen recording (optional)
-
-The current `demo.gif` is a slideshow built from screenshots. For a live-feel clip, record ~15s of the running app and overwrite `docs/images/demo.gif`.
+Attach `docs/images/dashboard.png` or `docs/images/demo.gif`.

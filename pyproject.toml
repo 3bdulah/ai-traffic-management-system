@@ -17,5 +17,5 @@ testpaths = [
     "packages/cv-pipeline/tests",
     "packages/adaptive-policy/tests",
     "packages/shared/tests",
-    "backend/tests",
+    "backend/smoke_tests",
 ]

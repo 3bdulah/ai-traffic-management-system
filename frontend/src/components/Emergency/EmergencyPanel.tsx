@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { api } from "@/lib/api";
 import { useTrafficStore } from "@/store/trafficStore";
 
 const INTERSECTION_IDS = ["A0", "A1", "B0", "B1", "C0", "C1"] as const;
@@ -68,21 +69,11 @@ export default function EmergencyPanel() {
     setError(null);
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:8000/api/emergency/dispatch", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          from_intersection: from,
-          to_intersection: to,
-          vehicle_type: vehicleType,
-        }),
+      const data = await api.dispatchEmergency({
+        from_intersection: from,
+        to_intersection: to,
+        vehicle_type: vehicleType,
       });
-      if (!res.ok) {
-        const err = await res.json();
-        setError(err.detail ?? "Dispatch failed.");
-        return;
-      }
-      const data = await res.json();
       const typeLabel = VEHICLE_TYPES.find((v) => v.value === vehicleType)?.label ?? vehicleType;
       setActiveEvs((prev) => [
         ...prev,
@@ -92,8 +83,8 @@ export default function EmergencyPanel() {
           route_intersections: data.route_intersections,
         },
       ]);
-    } catch {
-      setError("Could not reach the backend.");
+    } catch (e) {
+      setError(e instanceof Error ? e.message : "Dispatch failed.");
     } finally {
       setLoading(false);
     }
@@ -101,9 +92,7 @@ export default function EmergencyPanel() {
 
   async function cancel(vehicleId: string) {
     try {
-      await fetch(`http://localhost:8000/api/emergency/${encodeURIComponent(vehicleId)}`, {
-        method: "DELETE",
-      });
+      await api.cancelEmergency(vehicleId);
     } catch {
       // best-effort
     }

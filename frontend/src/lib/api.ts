@@ -141,6 +141,30 @@ export const api = {
       method: "POST",
       body: JSON.stringify({ enabled }),
     }),
+
+  // AI assistant
+  sendChat: (messages: { role: string; content: string }[]) =>
+    request<{ reply: string }>("/chat", {
+      method: "POST",
+      body: JSON.stringify({ messages }),
+    }),
+
+  // Emergency dispatch (arterial grid)
+  dispatchEmergency: (body: {
+    from_intersection: string;
+    to_intersection: string;
+    vehicle_type: string;
+  }) =>
+    request<{
+      vehicle_id: string;
+      route_intersections: string[];
+    }>("/emergency/dispatch", {
+      method: "POST",
+      body: JSON.stringify(body),
+    }),
+  cancelEmergency: (vehicleId: string) =>
+    request(`/emergency/${encodeURIComponent(vehicleId)}`, { method: "DELETE" }),
+
   // NOTE: camera streams are consumed directly via <img src> using
   // API_BASE + `/cameras/{id}/{approach}/stream`, so no fetch wrapper.
 };

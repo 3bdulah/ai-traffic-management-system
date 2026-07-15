@@ -592,7 +592,7 @@ Open **http://localhost:3000**, pick a network and a policy, and click **Start**
 
 ## Reference
 
-The complete capstone report — including methodology, full results, analysis, and acknowledgements — lives in [`docs/CAPSTONE_REPORT.md`](docs/CAPSTONE_REPORT.md). Team credits are in [`CONTRIBUTORS.md`](CONTRIBUTORS.md). First-time setup without cloud keys: [`docs/DEMO.md`](docs/DEMO.md). Regenerate schematic and chart figures with `bash scripts/generate_readme_figures.sh`; the demo GIF with `python docs/images/scripts/make_demo_gif.py`.
+The complete capstone report — including methodology, full results, analysis, and acknowledgements — lives in [`docs/CAPSTONE_REPORT.md`](docs/CAPSTONE_REPORT.md). Team credits: [`CONTRIBUTORS.md`](CONTRIBUTORS.md). First-time setup: [`docs/DEMO.md`](docs/DEMO.md). Architecture: [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md). API docs (when backend is running): **http://localhost:8000/docs**. Changelog: [`CHANGELOG.md`](CHANGELOG.md). Cite this work: [`CITATION.cff`](CITATION.cff).
 
 ---
 

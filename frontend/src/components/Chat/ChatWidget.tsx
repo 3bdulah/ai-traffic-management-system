@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { api } from "@/lib/api";
 
 interface Message {
   role: "user" | "assistant";
@@ -28,12 +29,7 @@ export default function ChatWidget() {
     setLoading(true);
 
     try {
-      const res = await fetch("http://localhost:8000/api/chat", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ messages: next }),
-      });
-      const data = await res.json();
+      const data = await api.sendChat(next);
       setMessages([...next, { role: "assistant", content: data.reply }]);
     } catch {
       setMessages([...next, { role: "assistant", content: "Could not reach the backend." }]);
