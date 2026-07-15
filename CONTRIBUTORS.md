@@ -7,7 +7,7 @@ Bahçeşehir University · AI Engineering Capstone · June 2026
 
 | Name | Focus areas |
 |------|-------------|
-| Mohamed Aiman Alkhozendar | SUMO networks, TraCI client, actuated/fixed-time policies, race-mode framework, policy variants |
+| [Mohamed Aiman Alkhozendar](https://github.com/m7md-aiman) | SUMO networks, TraCI client, actuated/fixed-time policies, race-mode framework, policy variants |
 | Abdullah Shaher Salamoun | FastAPI backend, WebSocket layer, Supabase logging, experiment API |
 | [Abdullah Hani Al-Shobaki](https://github.com/3bdulah) | Next.js dashboard, emergency preemption, CARLA bridge, Groq AI assistant |
 
@@ -19,7 +19,7 @@ Bahçeşehir University · AI Engineering Capstone · June 2026
 |------|-------------|
 | Mohammed Ahmed Al-Labani | Dataset capture, analytics layer (speed, queue, violations) |
 | Mohamed Dribika | YOLOv11 training, evaluation pipeline, tracking metrics |
-| Omar Kamal Jayyusi | ByteTrack integration, CARLA scenarios, collision detection |
+| [Omar Kamal Jayyusi](https://github.com/OJayyusiO) | ByteTrack integration, CARLA scenarios, collision detection |
 
 **Advisor:** Prof. Fatih Kahraman
 

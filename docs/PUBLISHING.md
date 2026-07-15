@@ -1,26 +1,37 @@
-# Publishing checklist
+# Publishing to GitHub & LinkedIn
 
-Public repo: **https://github.com/3bdulah/ai-traffic-management-system**
+Public repo: **https://github.com/3bdulah/ai-traffic-management-system**  
+Release: **https://github.com/3bdulah/ai-traffic-management-system/releases/tag/v1.0.0**
 
-## Completed
+## Shipped on the repo
 
-- Public release **v1.0.0** with changelog
-- CI: Python tests (12) + frontend build + ESLint
-- Docs: architecture, demo guide, capstone report, contributors, security policy
-- GitHub topics, issue templates, Dependabot, citation file
+- Public visibility, description, topics, homepage, wiki disabled
+- `v1.0.0` GitHub release + changelog
+- CI (tests, smoke tests, frontend lint + build)
+- README with screenshots, demo GIF, release badge
+- `CONTRIBUTORS.md`, `docs/DEMO.md`, `docs/ARCHITECTURE.md`, `CITATION.cff`, `SECURITY.md`
+- Issue template, PR template, Dependabot
+- `frontend/.env.example` for custom API URLs
 
-## One manual step
+## Your last two steps
 
-Upload **Settings → General → Social preview** using `docs/images/dashboard.png` or `hero-banner.png`.
+1. **Social preview** — repo **Settings → General → Social preview** → upload `docs/images/dashboard.png`
+2. **LinkedIn post** — use template below + attach `docs/images/demo.gif`
 
-## LinkedIn post
+## LinkedIn post (template)
 
-> Built an AI traffic management platform for our year-long capstone at Bahçeşehir University.
+> Built **TRaffic** — an AI traffic management platform for our year-long capstone at Bahçeşehir University.
 >
 > - **54%** shorter average wait times (adaptive vs fixed-time signals)
 > - Custom **YOLOv11m** (mAP 0.949) + SUMO microsimulation + real-time Next.js dashboard
 > - Emergency preemption, ramp metering, CARLA vision bridge
 >
+> Stack: Python · FastAPI · Next.js · SUMO · CARLA · Supabase
+>
 > Repo: https://github.com/3bdulah/ai-traffic-management-system
 
-Attach `docs/images/dashboard.png` or `docs/images/demo.gif`.
+## Optional later
+
+- Replace `demo.gif` with a live screen recording
+- Deploy a hosted demo (Vercel + cloud backend)
+- Add teammates' GitHub handles to `CONTRIBUTORS.md` when they share them

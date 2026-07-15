@@ -12,6 +12,7 @@
 [![YOLOv11](https://img.shields.io/badge/YOLOv11m-mAP_0.949-8E44AD)](https://github.com/ultralytics/ultralytics)
 [![Capstone](https://img.shields.io/badge/Capstone-Bah%C3%A7e%C5%9Fehir_University-5E35B1)](https://bau.edu.tr)
 [![CI](https://github.com/3bdulah/ai-traffic-management-system/actions/workflows/ci.yml/badge.svg)](https://github.com/3bdulah/ai-traffic-management-system/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/3bdulah/ai-traffic-management-system?label=release)](https://github.com/3bdulah/ai-traffic-management-system/releases/tag/v1.0.0)
 
 **Traffic lights that see the road and adapt to it in real time.** Instead of running on a fixed timer, this system uses AI-powered cameras to count vehicles as they arrive and adjusts signal timing on the fly — tested in a virtual city across three traffic patterns and proven to cut waiting times by up to **54 %**.
 
@@ -592,7 +593,7 @@ Open **http://localhost:3000**, pick a network and a policy, and click **Start**
 
 ## Reference
 
-The complete capstone report — including methodology, full results, analysis, and acknowledgements — lives in [`docs/CAPSTONE_REPORT.md`](docs/CAPSTONE_REPORT.md). Team credits: [`CONTRIBUTORS.md`](CONTRIBUTORS.md). First-time setup: [`docs/DEMO.md`](docs/DEMO.md). Architecture: [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md). API docs (when backend is running): **http://localhost:8000/docs**. Changelog: [`CHANGELOG.md`](CHANGELOG.md). Cite this work: [`CITATION.cff`](CITATION.cff).
+The complete capstone report — including methodology, full results, analysis, and acknowledgements — lives in [`docs/CAPSTONE_REPORT.md`](docs/CAPSTONE_REPORT.md). Team credits: [`CONTRIBUTORS.md`](CONTRIBUTORS.md). First-time setup: [`docs/DEMO.md`](docs/DEMO.md). Architecture: [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md). API docs (when backend is running): **http://localhost:8000/docs**. Changelog: [`CHANGELOG.md`](CHANGELOG.md). Cite this work: [`CITATION.cff`](CITATION.cff). Security: [`SECURITY.md`](SECURITY.md).
 
 ---
 
