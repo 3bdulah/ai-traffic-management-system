@@ -587,7 +587,7 @@ cd frontend && npm run dev
 
 Open **http://localhost:3000**, pick a network and a policy, and click **Start**.
 
-> Supabase and Groq are optional — the dashboard runs without them; persistence and the AI assistant need keys in `.env` (see `.env.example`).
+> Supabase and Groq are optional — the dashboard runs without them; persistence and the AI assistant need keys in `.env` files (see `.env.example`).
 
 ---
 
