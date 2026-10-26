@@ -14,7 +14,7 @@
 [![CI](https://github.com/3bdulah/ai-traffic-management-system/actions/workflows/ci.yml/badge.svg)](https://github.com/3bdulah/ai-traffic-management-system/actions/workflows/ci.yml)
 [![Release](https://img.shields.io/github/v/release/3bdulah/ai-traffic-management-system?label=release)](https://github.com/3bdulah/ai-traffic-management-system/releases/tag/v1.0.0)
 
-**Traffic lights that see the road and adapt to it in real time.** Instead of running on a fixed timer, this system uses AI-powered cameras to count vehicles as they arrive and adjusts signal timing on the fly — tested in a virtual city across three traffic patterns and proven to cut waiting times by up to **54 %**.
+**A simulation-based traffic management prototype.** The system combines traffic simulation, vehicle perception, adaptive signal-control policies, and a live dashboard. In the documented fixed-seed simulation scenarios, adaptive control reduced average waiting time by up to **54 %** relative to the fixed-time baseline. These are scenario-specific experimental results, not a claim of deployment on live public roads.
 
 <img src="docs/images/demo.gif" alt="TRaffic platform demo — dashboard, CARLA vision, Simulation Lab, real-world detections" width="92%" />
 
@@ -289,7 +289,7 @@ Detected incidents are:
 
 ## Perception in action
 
-The same YOLOv11m + ByteTrack analytics pipeline runs identically whether the input is a CARLA-rendered camera feed or a real traffic camera. Two examples below show the analytics layer working on real-world footage — chevron-violation zones, ramp-entry counts, and collision detection — against video the model never saw in training.
+The same YOLOv11m + ByteTrack analytics pipeline is designed to accept CARLA-rendered camera feeds and camera footage. The examples below illustrate inference on footage outside the synthetic training set; they are not evidence of a live traffic-control deployment or a comprehensive real-world validation study.
 
 <table>
 <tr>
@@ -302,7 +302,7 @@ The same YOLOv11m + ByteTrack analytics pipeline runs identically whether the in
 </tr>
 </table>
 
-> **Why this matters:** the YOLOv11m model was trained entirely on CARLA-generated synthetic data, never on real traffic footage. These frames are the strongest visual evidence that the synthetic-to-real domain gap is bridgeable in this setting — the same code path that powers the simulation analytics works on a real camera with no model changes.
+> **Evaluation caveat:** the YOLOv11m model was trained on CARLA-generated synthetic data. The displayed footage provides qualitative examples only; it does not establish generalization across locations, weather, camera types, or operating conditions. The traffic-control performance figures above come from the documented simulation experiments.
 
 ---
 
